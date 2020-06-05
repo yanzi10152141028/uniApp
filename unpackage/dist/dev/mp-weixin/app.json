@@ -1,0 +1,80 @@
+{
+  "pages": [
+    "pages/index/home",
+    "pages/cart/cart",
+    "pages/member/member",
+    "pages/product/product"
+  ],
+  "subPackages": [
+    {
+      "root": "pages/pagesItem",
+      "pages": [
+        "product/detail"
+      ]
+    },
+    {
+      "root": "pages/pagesbuy",
+      "pages": [
+        "order/detail"
+      ]
+    },
+    {
+      "root": "pages/pagesAddress",
+      "pages": [
+        "address/list",
+        "address/add"
+      ]
+    }
+  ],
+  "window": {
+    "pageOrientation": "portrait",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "斗金",
+    "navigationBarBackgroundColor": "#f7f7f7",
+    "backgroundColor": "#F8F8F8",
+    "backgroundColorTop": "#F4F5F6",
+    "backgroundColorBottom": "#F4F5F6"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#e6465a",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/index/home",
+        "iconPath": "static/index/home.png",
+        "selectedIconPath": "static/index/home_hit.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "iconPath": "static/index/allGoods.png",
+        "selectedIconPath": "static/index/allGoods_hit.png",
+        "text": "全部商品"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/index/shopping.png",
+        "selectedIconPath": "static/index/shopping_hit.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "iconPath": "static/index/personal.png",
+        "selectedIconPath": "static/index/personal_hit.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "演示定位能力"
+    }
+  },
+  "usingComponents": {
+    "page-head": "/components/page-head",
+    "page-foot": "/components/page-foot",
+    "u-link": "/components/uLink"
+  }
+}
