@@ -28,6 +28,18 @@
                 }
             })
             // #endif
+			uni.getSetting({
+				success: (res) => {
+					if(res.authSetting['scope.userInfo']){
+						uni.getUserInfo({
+							provider:'weixin',
+							success: (res) => {
+								console.log(res)
+							}
+						})
+					}
+				}
+			})
         },
         onShow: function() {
             console.log('App Show')

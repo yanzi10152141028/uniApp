@@ -2,6 +2,25 @@
 	"pages": [
 		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/wxaccredit/wxaccredit",
+			"style": {
+				"navigationBarTitleText": "微信授权",
+				"app-plus":{
+					"titleNView":{
+						"backgroundColor":"#007AFF",
+						"titleColor":"#FFFFFF"
+					}
+				},
+				"h5":{
+					"titleNView":{
+						"backgroundColor":"#000000",
+						"titleColor":"#FFFFFF"
+					}
+				}
+			}
+			
+		},
+		{
 			"path": "pages/index/home",
 			"style": {
 				"navigationBarTitleText": "首页",
@@ -72,7 +91,7 @@
 				}
 			}
 		}
-	],
+    ],
 	"subPackages": [{
 			"root": "pages/pagesItem",
 			"pages": [{
